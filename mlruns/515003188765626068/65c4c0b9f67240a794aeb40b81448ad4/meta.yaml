@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/515003188765626068/65c4c0b9f67240a794aeb40b81448ad4/artifacts
+end_time: 1718102947562
+entry_point_name: ''
+experiment_id: '515003188765626068'
+lifecycle_stage: active
+run_id: 65c4c0b9f67240a794aeb40b81448ad4
+run_name: smiling-wasp-125
+run_uuid: 65c4c0b9f67240a794aeb40b81448ad4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718102945846
+status: 4
+tags: []
+user_id: ovira

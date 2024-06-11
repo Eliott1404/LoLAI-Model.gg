@@ -4,7 +4,7 @@ from data_prep import load_data
 from model import NeuralNetwork
 import yaml
 
-with open('config.yaml', 'r') as f:
+with open('../config.yaml', 'r') as f:
     config = yaml.safe_load(f)
 
 # Load data

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/515003188765626068/ab2bd8bd6eb147aab63db90f014c0b2f/artifacts
+end_time: 1718103322125
+entry_point_name: ''
+experiment_id: '515003188765626068'
+lifecycle_stage: active
+run_id: ab2bd8bd6eb147aab63db90f014c0b2f
+run_name: bright-ox-868
+run_uuid: ab2bd8bd6eb147aab63db90f014c0b2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718103174611
+status: 3
+tags: []
+user_id: ovira

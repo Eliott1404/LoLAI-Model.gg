@@ -1,14 +1,22 @@
 import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
+import torch.nn as nn
 import mlflow
 import mlflow.pytorch
 from data_prep import load_data
 from model import NeuralNetwork
 import yaml
 
-with open('config.yaml', 'r') as f:
+with open('../config.yaml', 'r') as f:
     config = yaml.safe_load(f)
+
+
+# Set the tracking URI to your local filesystem (default)
+mlflow.set_tracking_uri("http://localhost:5000")
+
+# Set the experiment name
+mlflow.set_experiment("League of Legends Win Prediction")
 
 # Set MLflow experiment
 mlflow.set_tracking_uri(config['mlflow']['uri'])
