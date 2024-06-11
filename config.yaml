@@ -1,0 +1,16 @@
+mlflow:
+  uri: "http://localhost:5000"
+  experiment_name: "League of Legends Win Prediction"
+
+data:
+  file_path: "data/transformed_games_final_one_hot.csv"
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 10
+
+model:
+  hidden_size: 128
+  output_size: 2
+  save_path: "model.pth"

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/515003188765626068/5b2e2c2ee3e84141b1c0a6dd5c8cc849/artifacts
+end_time: 1718101382752
+entry_point_name: ''
+experiment_id: '515003188765626068'
+lifecycle_stage: active
+run_id: 5b2e2c2ee3e84141b1c0a6dd5c8cc849
+run_name: big-gull-853
+run_uuid: 5b2e2c2ee3e84141b1c0a6dd5c8cc849
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718101369985
+status: 3
+tags: []
+user_id: ovira
