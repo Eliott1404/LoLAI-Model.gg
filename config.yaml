@@ -7,9 +7,9 @@ data:
 
 training:
   batch_size: 32
-  learning_rate: 0.000001
-  epochs: 50
-  patience: 5
+  learning_rate: 0.00001
+  epochs: 300
+  patience: 20
   checkpoint_dir: "artifacts/checkpoints"
 
 model:
@@ -18,5 +18,5 @@ model:
   save_path: "model.pth"
 
 scheduler:
-  step_size: 40
-  gamma: 0.001
+  step_size: 20
+  gamma: 0.7

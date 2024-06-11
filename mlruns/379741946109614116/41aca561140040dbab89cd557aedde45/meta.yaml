@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/379741946109614116/41aca561140040dbab89cd557aedde45/artifacts
+end_time: 1718125880189
+entry_point_name: ''
+experiment_id: '379741946109614116'
+lifecycle_stage: active
+run_id: 41aca561140040dbab89cd557aedde45
+run_name: intrigued-frog-669
+run_uuid: 41aca561140040dbab89cd557aedde45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718125183076
+status: 4
+tags: []
+user_id: ovira

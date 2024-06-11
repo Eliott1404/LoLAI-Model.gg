@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/379741946109614116/58efca02e18f4748953f9073f742f3e5/artifacts
+end_time: 1718127123952
+entry_point_name: ''
+experiment_id: '379741946109614116'
+lifecycle_stage: active
+run_id: 58efca02e18f4748953f9073f742f3e5
+run_name: trusting-squid-732
+run_uuid: 58efca02e18f4748953f9073f742f3e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718127002821
+status: 3
+tags: []
+user_id: ovira

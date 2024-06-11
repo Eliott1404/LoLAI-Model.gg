@@ -6,7 +6,7 @@ import mlflow
 import mlflow.pytorch
 from sklearn.metrics import accuracy_score
 from data_prep import load_data
-from model import NeuralNetwork
+from model import WideAndDeepModel
 from utils import setup_logging
 import yaml
 import os
@@ -36,7 +36,7 @@ train_loader = DataLoader(train_dataset, batch_size=config['training']['batch_si
 test_loader = DataLoader(test_dataset, batch_size=config['training']['batch_size'], shuffle=False)
 
 # Model, loss function, optimizer
-model = NeuralNetwork(X_train.shape[1], config['model']['hidden_size'], config['model']['output_size'])
+model = WideAndDeepModel(X_train.shape[1], config['model']['hidden_size'], config['model']['output_size'])
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=config['training']['learning_rate'])
 
@@ -109,17 +109,18 @@ with mlflow.start_run():
     mlflow.pytorch.log_model(model, "model")
     torch.save(model.state_dict(), config['model']['save_path'])
 
-    # Evaluate the model using mlflow.evaluate
-    eval_data = pd.DataFrame(X_test.numpy())
-    eval_data["label"] = y_test.numpy()
-    model_uri = mlflow.get_artifact_uri("model")
+    # # Evaluate the model using mlflow.evaluate
+    # eval_data = pd.DataFrame(X_test.numpy())
+    # eval_data["label"] = y_test.numpy()
+    # model_uri = mlflow.get_artifact_uri("model")
 
-    result = mlflow.evaluate(
-        model_uri,
-        eval_data,
-        targets="label",
-        model_type="classifier",
-        evaluators=["default"]
-    )
+    # result = mlflow.evaluate(
+    #     model_uri,
+    #     eval_data,
+    #     targets="label",
+    #     model_type="classifier",
+    #     evaluators=["default"]
+    # )
+    # logger.info(f"Evaluation results: {result.metrics}")
 
 logger.info("Training completed")
