@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/379741946109614116/76d1a6ed71704b85a337e93f28d2ab47/artifacts
+end_time: 1718106292020
+entry_point_name: ''
+experiment_id: '379741946109614116'
+lifecycle_stage: active
+run_id: 76d1a6ed71704b85a337e93f28d2ab47
+run_name: spiffy-wasp-676
+run_uuid: 76d1a6ed71704b85a337e93f28d2ab47
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718106182494
+status: 3
+tags: []
+user_id: ovira

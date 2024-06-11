@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/379741946109614116/0256d38c96774d73933f442df094917f/artifacts
+end_time: 1718109762321
+entry_point_name: ''
+experiment_id: '379741946109614116'
+lifecycle_stage: active
+run_id: 0256d38c96774d73933f442df094917f
+run_name: mysterious-shrew-559
+run_uuid: 0256d38c96774d73933f442df094917f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718109393750
+status: 4
+tags: []
+user_id: ovira

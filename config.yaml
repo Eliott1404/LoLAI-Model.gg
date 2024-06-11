@@ -1,16 +1,22 @@
 mlflow:
   uri: "http://localhost:5000"
-  experiment_name: "League of Legends Win Prediction"
+  experiment_name: "League of Legends Win Prediction - Dropout"
 
 data:
   file_path: "../data/transformed_games_final_one_hot.csv"
 
 training:
   batch_size: 32
-  learning_rate: 0.001
-  epochs: 25
+  learning_rate: 0.000001
+  epochs: 50
+  patience: 5
+  checkpoint_dir: "artifacts/checkpoints"
 
 model:
   hidden_size: 128
   output_size: 2
   save_path: "model.pth"
+
+scheduler:
+  step_size: 40
+  gamma: 0.001
