@@ -12,11 +12,11 @@ class WideAndDeepModel(nn.Module):
         # Deep part
         self.deep_fc1 = nn.Linear(input_size, hidden_size)
         self.bn1 = nn.BatchNorm1d(hidden_size)
-        self.dropout1 = nn.Dropout(0.5)
+        self.dropout1 = nn.Dropout(0.6)
         
         self.deep_fc2 = nn.Linear(hidden_size, hidden_size)
         self.bn2 = nn.BatchNorm1d(hidden_size)
-        self.dropout2 = nn.Dropout(0.5)
+        self.dropout2 = nn.Dropout(0.7)
         
         self.deep_fc3 = nn.Linear(hidden_size, output_size)
     

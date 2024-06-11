@@ -38,7 +38,7 @@ test_loader = DataLoader(test_dataset, batch_size=config['training']['batch_size
 # Model, loss function, optimizer
 model = WideAndDeepModel(X_train.shape[1], config['model']['hidden_size'], config['model']['output_size'])
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=config['training']['learning_rate'])
+optimizer = optim.Adam(model.parameters(), lr=config['training']['learning_rate'], weight_decay=1e-5)
 
 # Learning rate scheduler
 scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=config['scheduler']['step_size'], gamma=config['scheduler']['gamma'])
@@ -60,9 +60,15 @@ with mlflow.start_run():
         for inputs, labels in train_loader:
             optimizer.zero_grad()
             outputs = model(inputs)
+
             loss = criterion(outputs, labels)
             loss.backward()
+
+            # Gradient clipping (if needed)
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+
             optimizer.step()
+
             running_loss += loss.item()
 
         avg_train_loss = running_loss / len(train_loader)

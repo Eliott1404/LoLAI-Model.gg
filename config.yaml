@@ -19,4 +19,4 @@ model:
 
 scheduler:
   step_size: 20
-  gamma: 0.7
+  gamma: 0.9

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/379741946109614116/9de6f332f50f4e30a9ecd5e023aa1aef/artifacts
+end_time: 1718130742175
+entry_point_name: ''
+experiment_id: '379741946109614116'
+lifecycle_stage: active
+run_id: 9de6f332f50f4e30a9ecd5e023aa1aef
+run_name: luxuriant-foal-730
+run_uuid: 9de6f332f50f4e30a9ecd5e023aa1aef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718130318489
+status: 4
+tags: []
+user_id: ovira
